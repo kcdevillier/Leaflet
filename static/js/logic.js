@@ -28,21 +28,25 @@ function createMap(data, legend){
         "Dark Map": darkMap
     };
     //clickable option for layers, earthquake and faultline   
-    var overlayMaps = { 
-        "Earthquakes:": data
-    };
+    
 
-    var map = L.map('map', { 
+    // var overlayMaps = { 
+    //     "Earthquakes:": data
+    // };
+    
+    map = L.map('map', { 
         center: [37.733795,-122.446747],
         zoom: 8,
-        layers: [baseMaps, overlayMaps]
+        layers: [baseMaps]
     }); 
 
-    L.control.layers(baseMaps, overlayMaps, { 
-        collapsed:false
-    }).addTo(map);
+    data.addTo(map);
+    
+    // L.control.layers(baseMaps, { 
+    //     collapsed:false
+    // }).addTo(map);
 
-    legend.addTo(map);
+    // legend.addTo(map);
 
     
 };
