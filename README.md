@@ -8,5 +8,5 @@ The USGS is responsible for providing scientific data about natural hazards, the
 
 This project uses Javascript and Leaflet to create visual maps of earthquake data collected from the USGS.
 
-Images/5-Advanced.png
+![2-img](Images/5-Advanced.png)
 
